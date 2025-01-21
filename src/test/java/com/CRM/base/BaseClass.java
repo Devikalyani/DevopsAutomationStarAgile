@@ -1,4 +1,4 @@
-package com.CRM.Tests;
+package com.CRM.base;
 
 import java.time.Duration;
 
@@ -13,9 +13,9 @@ import com.CRM.Pages.LoginPage;
 
 public class BaseClass {
 
-	WebDriver driver;
-	HomePage hp;
-	LoginPage lp;
+	public WebDriver driver;
+	public HomePage hp;
+	public LoginPage lp;
 
 	@BeforeTest
 	public  void beforeTest() {
@@ -30,7 +30,8 @@ public class BaseClass {
 	}
 
 	@AfterTest
-	public void afterTest() {
+	public void afterTest() throws InterruptedException {
+		Thread.sleep(3000);	
 		driver.close();
 		
 	}

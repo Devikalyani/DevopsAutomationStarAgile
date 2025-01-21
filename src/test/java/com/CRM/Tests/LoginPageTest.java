@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.CRM.base.BaseClass;
+
 public class LoginPageTest extends BaseClass{
 	
 	@BeforeClass

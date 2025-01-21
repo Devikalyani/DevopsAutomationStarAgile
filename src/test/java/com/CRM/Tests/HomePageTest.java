@@ -1,7 +1,9 @@
 package com.CRM.Tests;
 
-import org.testng.annotations.Test;
 import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.CRM.base.BaseClass;
 
 
 public class HomePageTest extends BaseClass{
